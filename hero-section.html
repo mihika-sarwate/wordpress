@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Town Limo - Premium Luxury Limousine Service in Atlanta</title>
+    <link rel="stylesheet" href="hero-style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <!-- Background with overlay -->
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Logo/Brand -->
+                <div class="hero-brand">
+                    <h1 class="brand-name">A TOWN LIMO</h1>
+                    <p class="brand-tagline">Atlanta's Premier Luxury Car Service</p>
+                </div>
+
+                <!-- Main Headline -->
+                <div class="hero-headline">
+                    <h2 class="main-headline">Experience Unparalleled Luxury Throughout Atlanta</h2>
+                </div>
+
+                <!-- Subheadline -->
+                <div class="hero-subheadline">
+                    <p>Premium Cadillac Escalades, Mercedes Sprinter Vans & Executive Sedans. Trusted by Atlanta's most discerning travelers since 2010.</p>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form-container" role="region" aria-labelledby="booking-title">
+                    <h3 id="booking-title" class="sr-only">Book Your Luxury Ride</h3>
+                    <form class="booking-form" id="townLimoForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pickup">Pickup Location</label>
+                                <input type="text" id="pickup" name="pickup" placeholder="Enter pickup location" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dropoff">Drop-off Location</label>
+                                <input type="text" id="dropoff" name="dropoff" placeholder="Enter drop-off location" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="vehicle">Vehicle Type</label>
+                                <select id="vehicle" name="vehicle" required>
+                                    <option value="">Select your preferred vehicle</option>
+                                    <option value="cadillac-escalade">Cadillac Escalade (SUV)</option>
+                                    <option value="mercedes-sedan">Mercedes E-Class Sedan</option>
+                                    <option value="sprinter-van">Mercedes Sprinter Van</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">BOOK NOW</button>
+                            <button type="button" class="btn btn-secondary">GET QUOTE</button>
+                        </div>
+
+                        <p class="form-note">📞 Questions? Call us: <strong>(404) 555-LIMO</strong> | 24/7 Support</p>
+                    </form>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="trust-badges">
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span class="badge-text">Professional Drivers</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span class="badge-text">Luxury Fleet</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span class="badge-text">Guaranteed On-Time</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span class="badge-text">24/7 Availability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <script src="hero-script.js"></script>
+</body>
+</html>

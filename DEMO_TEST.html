@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Town Limo - Demo Testing Page</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        .testing-panel {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #1a1a1a;
+            color: #d4af37;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #d4af37;
+            font-size: 12px;
+            max-width: 250px;
+            z-index: 10000;
+            max-height: 300px;
+            overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+        
+        .testing-panel h3 {
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .testing-panel p {
+            margin: 8px 0;
+            line-height: 1.4;
+            color: #e0e0e0;
+        }
+        
+        .testing-panel code {
+            background: rgba(0,0,0,0.5);
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #d4af37;
+            font-family: monospace;
+        }
+        
+        .test-item {
+            margin: 12px 0;
+            padding-top: 8px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+        
+        .status-ready {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .status-info {
+            background: #2196F3;
+            color: white;
+        }
+        
+        .testing-panel a {
+            color: #d4af37;
+            text-decoration: none;
+            border-bottom: 1px dotted #d4af37;
+        }
+        
+        .testing-panel a:hover {
+            text-decoration: underline;
+        }
+
+        .hero-iframe {
+            width: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main iframe to display hero section -->
+    <iframe class="hero-iframe" id="heroFrame" src="hero-section.html" style="height: 100vh;"></iframe>
+
+    <!-- Testing Panel -->
+    <div class="testing-panel">
+        <h3>📋 Testing Guide</h3>
+        
+        <div class="test-item">
+            <strong>✓ Desktop</strong> <span class="status-badge status-ready">OK</span>
+            <p>Full width (1200px+) with all features</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>✓ Mobile</strong>
+            <p>Resize browser or use DevTools (F12 → Toggle Device Toolbar)</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>✓ Form</strong>
+            <p>Try: Phone: (404)555-1234, Valid email required</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>✓ Colors</strong>
+            <p>Gold: <code>#d4af37</code> | Dark: <code>#1a1a1a</code></p>
+        </div>
+        
+        <div class="test-item">
+            <strong>✓ Performance</strong>
+            <p>Check DevTools → Performance tab</p>
+        </div>
+        
+        <div class="test-item">
+            <strong>✓ Responsive Breakpoints</strong>
+            <p>
+                1200px+ Desktop<br>
+                768-1199px Tablet<br>
+                480-767px Mobile<br>
+                &lt;480px Small
+            </p>
+        </div>
+
+        <div class="test-item">
+            <strong>📱 Device Test</strong> <span class="status-badge status-info">TIP</span>
+            <p>Open DevTools (F12) → Right-click → Inspect frame element to test form directly</p>
+        </div>
+    </div>
+
+    <script>
+        // Responsive iframe height
+        function resizeIframe() {
+            const frame = document.getElementById('heroFrame');
+            if (frame && frame.contentDocument) {
+                frame.style.height = (frame.contentDocument.documentElement.scrollHeight + 100) + 'px';
+            }
+        }
+
+        window.addEventListener('resize', resizeIframe);
+        window.addEventListener('load', resizeIframe);
+
+        // Log browser info
+        console.log('%c✓ A Town Limo Hero Section', 'color: #d4af37; font-size: 16px; font-weight: bold;');
+        console.log('%cTesting Environment Ready', 'color: #4CAF50; font-size: 14px;');
+        console.log('Browser:', navigator.userAgent.split(' ').slice(-2).join(' '));
+        console.log('Viewport:', window.innerWidth + 'x' + window.innerHeight);
+        console.log('Files loaded successfully ✓');
+    </script>
+
+</body>
+</html>
