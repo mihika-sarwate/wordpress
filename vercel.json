@@ -1,0 +1,16 @@
+{
+  "buildCommand": "",
+  "installCommand": "",
+  "public": ".",
+  "cleanUrls": true,
+  "routes": [
+    {
+      "src": "/hero-section.html",
+      "dest": "/hero-section.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
