@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Town Limo - Premium Luxury Limousine Service in Atlanta</title>
+    <link rel="stylesheet" href="hero-style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <!-- Background with overlay -->
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Logo/Brand -->
+                <div class="hero-brand">
+                    <h1 class="brand-name">A TOWN LIMO</h1>
+                    <p class="brand-tagline">Atlanta's Premier Luxury Car Service</p>
+                </div>
+
+                <!-- Main Headline -->
+                <div class="hero-headline" role="heading" aria-level="2">
+                    <h2 class="main-headline">Experience Unparalleled Luxury Throughout Atlanta</h2>
+                </div>
+
+                <!-- Subheadline -->
+                <div class="hero-subheadline">
+                    <p>Premium Cadillac Escalades, Mercedes Sprinter Vans & Executive Sedans. Trusted by Atlanta's most discerning travelers since 2010.</p>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form-container" role="region" aria-labelledby="booking-title">
+                    <h3 id="booking-title" class="sr-only">Book Your Luxury Ride</h3>
+                    <form class="booking-form" id="townLimoForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pickup">Pickup Location <span class="required-indicator" aria-label="required">*</span></label>
+                                <input type="text" id="pickup" name="pickup" placeholder="Enter pickup location" required aria-required="true" aria-describedby="pickup-hint">
+                                <span id="pickup-hint" class="form-hint">Where we'll pick you up</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="dropoff">Drop-off Location <span class="required-indicator" aria-label="required">*</span></label>
+                                <input type="text" id="dropoff" name="dropoff" placeholder="Enter drop-off location" required aria-required="true" aria-describedby="dropoff-hint">
+                                <span id="dropoff-hint" class="form-hint">Where we'll take you</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date <span class="required-indicator" aria-label="required">*</span></label>
+                                <input type="date" id="date" name="date" required aria-required="true" aria-describedby="date-hint">
+                                <span id="date-hint" class="form-hint">Select your preferred date</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time <span class="required-indicator" aria-label="required">*</span></label>
+                                <input type="time" id="time" name="time" required aria-required="true" aria-describedby="time-hint">
+                                <span id="time-hint" class="form-hint">Pickup time (24-hour format)</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="vehicle">Vehicle Type <span class="required-indicator" aria-label="required">*</span></label>
+                                <select id="vehicle" name="vehicle" required aria-required="true" aria-describedby="vehicle-hint">
+                                    <option value="">Select your preferred vehicle</option>
+                                    <option value="cadillac-escalade">Cadillac Escalade (SUV) - Up to 6 passengers</option>
+                                    <option value="mercedes-sedan">Mercedes E-Class Sedan - Up to 4 passengers</option>
+                                    <option value="sprinter-van">Mercedes Sprinter Van - Up to 14 passengers</option>
+                                </select>
+                                <span id="vehicle-hint" class="form-hint">Choose based on group size</span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone <span class="required-indicator" aria-label="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required aria-required="true" aria-describedby="phone-hint phone-error">
+                                <span id="phone-hint" class="form-hint">We'll confirm your booking here</span>
+                                <span id="phone-error" class="form-error" aria-live="polite" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <span class="required-indicator" aria-label="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required aria-required="true" aria-describedby="email-hint email-error">
+                                <span id="email-hint" class="form-hint">For booking confirmation</span>
+                                <span id="email-error" class="form-error" aria-live="polite" role="alert"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary" aria-label="Submit booking for your luxury ride">BOOK NOW</button>
+                            <button type="button" class="btn btn-secondary" aria-label="Request a quote for your service">GET QUOTE</button>
+                        </div>
+
+                        <p class="form-note" role="complementary">📞 Questions? Call us: <strong><a href="tel:+14045551546" aria-label="Call A Town Limo at 404-555-LIMO">(404) 555-LIMO</a></strong> | 24/7 Support</p>
+                    </form>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="trust-badges">
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span class="badge-text">Professional Drivers</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span class="badge-text">Luxury Fleet</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span class="badge-text">Guaranteed On-Time</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span class="badge-text">24/7 Availability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <script src="hero-script.js"></script>
+</body>
+</html>
